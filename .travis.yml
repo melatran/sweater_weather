@@ -1,9 +1,6 @@
-deploy:
-  provider: heroku
-  api_key:
-    secure: CaB0S0tiac25fa6yPYPeHOjXYS8rYI+6h7hSiRkzWwbSlMddCGfErYTZxuOcdW+wp3NyzBiW+0rCEgwyf5SppLDuv9XECrn1sVhBN+sPxiIK9iGc9qzMcrfeYT7UJxCwvNJncrO0lWog0b03k4Qcbmdr9lg9jccESO2uzOiSSHI8HN0DuXp5q0JybnBboXVSKCWZvKczB0bal40w7mVtLpoq85a8FMqtq/f2Lw3WCbItuOvIrK3jXDCEpNlbGhavxzlyK0HriB6TuJjYdQ3GXdDPX6JFeCnZScsj1QWs43gbYAUtAFGsW9Sar42Z5kkdNY4A/qV6jXf1XMezIPPASWIjh8pyWXgwb+ak3qdfIoDZ2dECuzuwL0sDAt3p+YK4xRODfBVcvqByiuuvsLxRak69CrtWnn1xfiSYSCnRievlvRW5IqS/sOupd/J7zpB2IINTOhMOEyIVVN16FalWW4t0aoeKYWbRsQXawtm0e75lAaSdtUodnLD553HUp1b+qHGoxQ2E5eDD5vuBDS96fUoumtt11yN/OB6x4VEEFR163U4DD0YirX85vE3/SqAsLh/FrSi4lUIVTs3aSXgJbUcw90JrOYzPeXcUARrFqKBiXo6Xpz4TPvQafQXrlCwtXpywwMAaqyQ4ASRy+E/rMD2WL9orkZScRGAvkL/JG/U=
-  app: sweater-weather-2003
-  on:
-    repo: melatran/sweater_weather
-    branch: geocode
-  skip_cleanup: 'true'
+language: ruby
+services:
+  - postgresql
+script:
+  - bundle exec rake db:{create,migrate}
+  - bundle exec rspec
