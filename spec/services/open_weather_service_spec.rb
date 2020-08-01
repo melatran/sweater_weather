@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe OpenWeatherService do
   it ".get_forecast_data" do
+    WebMock.allow_net_connect!
+
     service = OpenWeatherService.new
     results = service.get_forecast_data(33.834492, -117.915638)
 
@@ -22,4 +24,6 @@ describe OpenWeatherService do
     expect(results[:daily]).to be_an(Array)
     expect(results[:daily].length).to eq(8)
   end
+
+
 end
