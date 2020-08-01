@@ -23,4 +23,25 @@ describe Forecast do
     expect(@forecast_data.uvi).to eq(10.78)
     expect(@forecast_data.summary).to eq("clear sky")
   end
+
+  it ".get_hourly_forecast" do
+    hourly_data = @forecast_data.get_hourly_forecast
+    expected = {"1596304800"=>76.84,
+          "1596308400"=>84.92,
+          "1596312000"=>89.37,
+          "1596315600"=>91.27,
+          "1596319200"=>90.64,
+          "1596322800"=>89.29,
+          "1596326400"=>88.12,
+          "1596330000"=>86.59}
+
+    expect(hourly_data).to be_a(Hash)
+    expect(hourly_data).to eq(expected)
+  end
+
+  it ".get_daily_forecast" do
+    daily_data = @forecast_data.get_daily_forecast
+    expect(daily_data.length).to eq(8)
+    expect(daily_data).to be_an(Array)
+  end
 end

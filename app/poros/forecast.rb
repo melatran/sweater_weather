@@ -25,6 +25,7 @@ class Forecast
     @summary = get_summary
   end
 
+
   def get_sunset
     @data[:current][:sunset]
   end
@@ -58,10 +59,22 @@ class Forecast
   end
 
   def get_hourly_forecast
+    hash = Hash.new
+    @data[:hourly][0..7].each do |data_info|
+      hash["#{data_info[:dt]}"] = data_info[:temp]
+      hash
+    end
 
+    return hash
   end
 
-  def daily_forecast
+
+  def get_daily_forecast
+    @data[:daily].map do |data_info|
+      data_info.slice!(:dt, :weather, :rain, :temp)
+      data_info[:temp].slice!(:min, :max)
+      data_info
+    end
   end
 
   def convert_to_miles(meters)
