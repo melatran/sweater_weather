@@ -13,6 +13,7 @@ gem 'figaro'
 gem 'fast_jsonapi'
 gem 'rack-cors'
 gem 'simplecov'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
