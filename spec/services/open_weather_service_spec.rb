@@ -5,7 +5,6 @@ describe OpenWeatherService do
     service = OpenWeatherService.new
     results = service.get_forecast_data(33.834492, -117.915638)
   
-    expect(results[:current]).to be_a(Hash)
     expect(results[:hourly]).to be_an(Array)
     expect(results[:daily]).to be_an(Array)
     #8 results from wireframe
