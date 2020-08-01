@@ -14,5 +14,3 @@ class MapQuestService
     end
   end
 end
-
-# http://www.mapquestapi.com/geocoding/v1/address?key=KxCAVYEDwuTN0d8wcgw441pofOTOKbsV&location=Anaheim, CA
