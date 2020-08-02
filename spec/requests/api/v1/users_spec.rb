@@ -9,10 +9,10 @@ describe "Users Api" do
     post '/api/v1/users', params: user_params
 
     json = JSON.parse(response.body, symbolize_names: true)
-
     expect(response).to be_successful
-    # expect(json[:data][:attributes][:name]).to eq(item_params[:name])
-    # expect(item.description).to eq(item_params[:description])
-    # expect(item.unit_price).to eq(item_params[:unit_price])
-    end
+    expect(json[:data][:attributes].keys).to_not eq([:id, :email, :api_key, :password])
+    expect(json[:data][:attributes].keys).to eq([:id, :email, :api_key])
+    expect(json[:data][:attributes][:email]).to eq('email@gmail.com')
+    expect(json[:data][:attributes][:api_key]).to_not be_nil
+  end
 end
