@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Forecast API" do
+describe "Forecast Endpoint" do
 
   it "returns the forecast for given city" do
     WebMock.allow_net_connect!

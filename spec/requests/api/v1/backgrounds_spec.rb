@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Backgrounds API' do
+describe 'Backgrounds Endpoint' do
   it "returns a background image url" do
     WebMock.allow_net_connect!
 
