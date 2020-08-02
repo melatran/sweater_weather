@@ -1,7 +1,7 @@
 class MapQuestService
-  def get_coordinates(city)
+  def get_coordinates(location)
     response = conn.get("/geocoding/v1/address") do |req|
-      req.params["location"] = city
+      req.params["location"] = location
     end
     JSON.parse(response.body, symbolize_names: true)
   end
