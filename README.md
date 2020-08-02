@@ -31,3 +31,13 @@ If the user was created successfully. This will be the response
 If the user was not created successfully. This will be the response to tell the user why it was not registered.
 
 <img width="846" alt="Screen Shot 2020-08-02 at 8 26 22 AM" src="https://user-images.githubusercontent.com/59414750/89126352-deb96c00-d499-11ea-9bfa-b9426b3e6415.png">
+
+POST `/api/v1/sessions`
+
+If the user was created successfully, the response will be similar to when a user successfully creates an account.
+
+<img width="843" alt="Screen Shot 2020-08-02 at 8 23 07 AM" src="https://user-images.githubusercontent.com/59414750/89126287-75395d80-d499-11ea-9521-d3a68a28f484.png">
+
+If the user was unable to login, the response will tell the user what their errors are.
+
+<img width="846" alt="Screen Shot 2020-08-02 at 10 42 32 AM" src="https://user-images.githubusercontent.com/59414750/89128839-4cbb5e80-d4ad-11ea-9b9b-03584be3f24d.png">
