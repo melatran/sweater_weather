@@ -2,9 +2,11 @@ require 'rails_helper'
 
 describe "Users Endpoint" do
   it 'can create a new user' do
-    user_params = { 'email': 'email@gmail.com',
+    user_params = {
+      'email': 'email@gmail.com',
       'password': 'password',
-      'password_confirmation': 'password' }
+      'password_confirmation': 'password'
+    }
 
     post '/api/v1/users', params: user_params
 
