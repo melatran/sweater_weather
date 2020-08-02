@@ -30,4 +30,4 @@ If the user was created successfully. This will be the response
 
 If the user was not created successfully. This will be the response to tell the user why it was not registered.
 
-<img width="846" alt="Screen Shot 2020-08-02 at 8 25 29 AM" src="https://user-images.githubusercontent.com/59414750/89126325-c1849d80-d499-11ea-8aef-755523e474c8.png">
+<img width="846" alt="Screen Shot 2020-08-02 at 8 26 22 AM" src="https://user-images.githubusercontent.com/59414750/89126352-deb96c00-d499-11ea-9bfa-b9426b3e6415.png">
