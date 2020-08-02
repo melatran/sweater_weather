@@ -8,13 +8,13 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'faker'
 gem 'figaro'
 gem 'fast_jsonapi'
 gem 'rack-cors'
 gem 'simplecov'
 gem 'faraday'
 gem 'rspec-rails'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
