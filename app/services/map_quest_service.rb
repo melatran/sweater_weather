@@ -6,6 +6,14 @@ class MapQuestService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def get_route(from, to)
+    response = conn.get("/directions/v2/route") do |req|
+      req.params[:from] = from
+      req.params[:to] = to
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def conn
