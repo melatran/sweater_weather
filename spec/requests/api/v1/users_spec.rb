@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Users Api" do
+describe "Users Endpoint" do
   it 'can create a new user' do
     user_params = { 'email': 'email@gmail.com',
       'password': 'password',
@@ -11,6 +11,7 @@ describe "Users Api" do
     json = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
     expect(json[:data][:attributes].keys).to_not eq([:id, :email, :api_key, :password])
     expect(json[:data][:attributes].keys).to eq([:id, :email, :api_key])
     expect(json[:data][:attributes][:email]).to eq('email@gmail.com')
@@ -26,7 +27,8 @@ describe "Users Api" do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Email can't be blank"])
   end
 
@@ -40,7 +42,8 @@ describe "Users Api" do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Email has already been taken"])
   end
 
@@ -52,8 +55,9 @@ describe "Users Api" do
     post '/api/v1/users', params: user_params
 
     json = JSON.parse(response.body, symbolize_names: true)
-    
-    expect(response).to be_successful
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Password confirmation doesn't match Password"])
   end
 end
