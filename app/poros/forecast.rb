@@ -1,12 +1,14 @@
 class Forecast
   attr_reader :data,
+              :location,
               :current_forecast,
               :hourly_forecast,
               :daily_forecast,
               :id,
               :timezone
 
-  def initialize(data)
+  def initialize(location, data)
+    @location = location
     @timezone = data[:timezone]
     @current_forecast = get_current_forecast(data)
     @hourly_forecast = get_hourly_forecast(data)
