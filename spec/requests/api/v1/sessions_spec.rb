@@ -37,8 +37,9 @@ describe 'Sessions endpoints' do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
-    expect(json[:email]).to eq(["Invalid email address"])
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+    expect(json[:email]).to eq('Invalid email address')
   end
 
   it "cant login if password incorrect" do
@@ -51,8 +52,8 @@ describe 'Sessions endpoints' do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
-    expect(response.status).to eq(200)
-    expect(json[:password]).to eq(['Incorrect password'])
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+    expect(json[:password]).to eq('Incorrect password')
   end
 end
