@@ -33,8 +33,8 @@ class Forecast
     end
   end
 
-  def convert_to_miles(meters)
-    # 1 mile = 1609.34 meters
-    meters / 1609.34
-  end
+  # def convert_to_miles(meters)
+  #   # 1 mile = 1609.34 meters
+  #   meters / 1609.34
+  # end
 end

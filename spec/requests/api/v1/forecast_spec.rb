@@ -17,7 +17,6 @@ describe "Forecast API" do
 
     expect(forecast[:data][:attributes].keys).to eq(expected_keys)
     expect(forecast).to be_a(Hash)
-    expect(forecast[:data][:attributes][:current_forecast][:temp]).to eq(70.59)
     expect(forecast[:data][:attributes][:hourly_forecast].length).to eq(48)
     expect(forecast[:data][:attributes][:daily_forecast].length).to eq(8)
   end
