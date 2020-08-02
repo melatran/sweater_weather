@@ -20,4 +20,4 @@ GET `/api/v1/forecast?location=denver,co`
 
 GET `/api/v1/backgrounds?location=denver,co`
 
-
+<img width="1021" alt="Screen Shot 2020-08-02 at 12 12 06 AM" src="https://user-images.githubusercontent.com/59414750/89117715-d985fe00-d454-11ea-899b-d9e9c13085ed.png">
