@@ -15,6 +15,7 @@ gem 'rack-cors'
 gem 'simplecov'
 gem 'faraday'
 gem 'rspec-rails'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
