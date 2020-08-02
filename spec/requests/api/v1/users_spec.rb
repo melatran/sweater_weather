@@ -27,7 +27,8 @@ describe "Users Endpoint" do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Email can't be blank"])
   end
 
@@ -41,7 +42,8 @@ describe "Users Endpoint" do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Email has already been taken"])
   end
 
@@ -54,7 +56,8 @@ describe "Users Endpoint" do
 
     json = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response).to be_successful
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
     expect(json[:errors]).to eq(["Password confirmation doesn't match Password"])
   end
 end
