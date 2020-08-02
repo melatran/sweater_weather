@@ -17,3 +17,7 @@ You are a back-end developer working on a team that is building an application t
 GET `/api/v1/forecast?location=denver,co`
 
 <img width="472" alt="Screen Shot 2020-08-02 at 12 09 31 AM" src="https://user-images.githubusercontent.com/59414750/89117683-8a3fcd80-d454-11ea-9e76-09fda9be6188.png">
+
+GET `/api/v1/backgrounds?location=denver,co`
+
+
