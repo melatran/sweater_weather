@@ -7,7 +7,8 @@ describe "Forecast Endpoint" do
     get "/api/v1/forecast", params: {location: 'anaheim,ca'}
 
     expect(response).to be_successful
-
+    expect(response.status).to eq(200)
+    
     forecast = JSON.parse(response.body, symbolize_names: true)
     expected_keys = [:id,
               :location,

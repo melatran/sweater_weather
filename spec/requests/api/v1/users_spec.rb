@@ -11,6 +11,7 @@ describe "Users Endpoint" do
     json = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
     expect(json[:data][:attributes].keys).to_not eq([:id, :email, :api_key, :password])
     expect(json[:data][:attributes].keys).to eq([:id, :email, :api_key])
     expect(json[:data][:attributes][:email]).to eq('email@gmail.com')

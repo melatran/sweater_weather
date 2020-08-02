@@ -21,6 +21,7 @@ describe 'Sessions endpoints' do
     json = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
     expect(json[:data][:attributes].keys).to eq([:id, :email, :api_key])
     expect(json[:data][:attributes][:email]).to eq('email@gmail.com')
     expect(json[:data][:attributes][:api_key]).to_not be_nil
@@ -51,6 +52,7 @@ describe 'Sessions endpoints' do
     json = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
     expect(json[:password]).to eq(['Incorrect password'])
   end
 end
