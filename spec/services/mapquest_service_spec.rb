@@ -3,7 +3,7 @@ require 'rails_helper'
 describe MapQuestService do
   it ".get_coordinates" do
     WebMock.allow_net_connect!
-    
+
     service = MapQuestService.new
     map_info = service.get_coordinates("Anaheim, CA")
 
