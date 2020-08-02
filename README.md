@@ -21,3 +21,13 @@ GET `/api/v1/forecast?location=denver,co`
 GET `/api/v1/backgrounds?location=denver,co`
 
 <img width="1021" alt="Screen Shot 2020-08-02 at 12 12 06 AM" src="https://user-images.githubusercontent.com/59414750/89117715-d985fe00-d454-11ea-899b-d9e9c13085ed.png">
+
+POST `/api/v1/users`
+
+If the user was created successfully. This will be the response
+
+<img width="843" alt="Screen Shot 2020-08-02 at 8 23 07 AM" src="https://user-images.githubusercontent.com/59414750/89126287-75395d80-d499-11ea-9521-d3a68a28f484.png">
+
+If the user was not created successfully. This will be the response to tell the user why it was not registered.
+
+<img width="846" alt="Screen Shot 2020-08-02 at 8 25 29 AM" src="https://user-images.githubusercontent.com/59414750/89126325-c1849d80-d499-11ea-8aef-755523e474c8.png">
