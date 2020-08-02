@@ -10,6 +10,7 @@ describe "Forecast API" do
 
     forecast = JSON.parse(response.body, symbolize_names: true)
     expected_keys = [:id,
+              :location,
               :timezone,
               :current_forecast,
               :hourly_forecast,

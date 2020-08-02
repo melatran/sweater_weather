@@ -4,11 +4,12 @@ describe Forecast do
   before :each do
     json_response = File.read('./spec/fixtures/weather_response.json')
     weather_json = JSON.parse(json_response, symbolize_names: true)
-    @forecast_data = Forecast.new(weather_json)
+    @forecast_data = Forecast.new('anaheim, ca', weather_json)
   end
 
   it "exists" do
     expect(@forecast_data).to be_a(Forecast)
+    expect(@forecast_data.location).to eq('anaheim, ca')
   end
 
   it "can get the information for the current_forecast" do
