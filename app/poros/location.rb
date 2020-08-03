@@ -29,4 +29,9 @@ class Location
     data[:results][0][:locations][0][:adminArea1]
   end
 
+  # def format_for_trails
+  #   {
+  #     location: "#{@city}, #{state}"
+  #   }
+  # end
 end

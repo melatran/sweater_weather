@@ -35,6 +35,16 @@ class Forecast
     end
   end
 
+  def format_for_trails
+    {
+      location: location,
+      forecast: {
+        temperature: current_forecast[:temp],
+        summary: current_forecast[:weather][0][:description]  
+      }
+    }
+  end
+
   # def convert_to_miles(meters)
   #   # 1 mile = 1609.34 meters
   #   meters / 1609.34
