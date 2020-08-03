@@ -40,7 +40,7 @@ class Forecast
       location: location,
       forecast: {
         temperature: current_forecast[:temp],
-        summary: current_forecast[:weather][0][:description]  
+        summary: current_forecast[:weather][0][:description]
       }
     }
   end

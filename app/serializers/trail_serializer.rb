@@ -1,4 +1,4 @@
 class TrailSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :location, :trails
+  attributes :id, :forecast_info, :trails
 end
