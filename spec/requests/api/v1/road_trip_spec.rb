@@ -23,5 +23,15 @@ describe "Road Trip Endpoints" do
     json2 = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
+    expect(json2[:roadtrip].keys).to eq([
+                  :origin,
+                  :destination,
+                  :travel_time,
+                  :travel_distance,
+                  :forecast
+                ])
+    expect(json2[:roadtrip][:origin]).to eq("anaheim, ca")
+    expect(json2[:roadtrip][:destination]).to eq("las vegas, nv")
   end
 end

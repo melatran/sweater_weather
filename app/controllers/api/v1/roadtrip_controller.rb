@@ -3,6 +3,8 @@ class Api::V1::RoadtripController < ApplicationController
     if authenticated_user?
       roadtrip = Roadtrip.new(params[:origin], params[:destination]).format_roadtrip
       render json: {status: 200, roadtrip: roadtrip}, status: 200
+    else
+      render json: {status: 400, api_key: 'Invalid credentials'}, status: 400
     end
   end
 
