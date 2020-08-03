@@ -15,4 +15,21 @@ describe Roadtrip do
     expect(@roadtrip.origin).to eq("Anaheim, CA")
     expect(@roadtrip.destination).to eq("Las Vegas, NV")
   end
+
+  describe "methods" do
+    it ".get_travel_distance_for_trip" do
+      WebMock.allow_net_connect!
+      expect(@roadtrip.get_travel_distance_for_trip).to eq( 265.467)
+    end
+
+    it ".get_travel_time" do
+      WebMock.allow_net_connect!
+      expect(@roadtrip.get_travel_time).to eq("03:59:44")
+    end
+
+    it ""
+
+    it "can format for roadtrip" do
+    end
+  end
 end

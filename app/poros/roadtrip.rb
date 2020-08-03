@@ -1,16 +1,34 @@
 class Roadtrip
-  attr_reader :origin, :destination, :travel_time, :temperature, :temp_summary
+  attr_reader :origin, :destination
 
   def initialize(origin, destination)
     @origin = origin
     @destination = destination
   end
 
-  def get_travel_distance(data)
-    data[:route][:distance]
+  def format_roadtrip
+    {
+      origin: @origin,
+      destination: @destination,
+      travel_time: get_travel_time,
+      travel_distance: get_travel_distance_for_trip,
+      forecast: get_forecast
+    }
   end
 
-  def get_travel_time(data)
-    data[:route][:formattedTime]
+  def service
+    MapQuestService.new.get_route(origin, destination)
+  end
+
+  def get_travel_distance_for_trip
+    service[:route][:distance]
+  end
+
+  def get_travel_time
+    service[:route][:formattedTime]
+  end
+
+  def get_forecast
+    
   end
 end
