@@ -30,7 +30,7 @@ describe Roadtrip do
     it ".get_forecast" do
       expect(@roadtrip.get_forecast).to_not be_nil
 
-      expected_keys = [:dt, :sunrise, :sunset, :temp, :feels_like, :humidity, :uvi, :visibility, :weather]
+      expected_keys =  [:dt, :sunrise, :sunset, :temp, :feels_like, :humidity, :uvi, :visibility, :wind_gust, :weather]
 
       expect(@roadtrip.get_forecast.keys).to eq(expected_keys)
     end
