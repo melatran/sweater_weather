@@ -1,0 +1,518 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -115.138527,
+                "lat": 33.834232
+            },
+            "ul": {
+                "lng": -117.917511,
+                "lat": 36.174931
+            }
+        },
+        "distance": 265.467,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "03:59:44",
+        "sessionId": "5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+        "hasAccessRestriction": false,
+        "realTime": 13768,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 12.95,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": true,
+                "destNarrative": "Proceed to LAS VEGAS, NV.",
+                "distance": 265.467,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "03:59:44",
+                "origIndex": 2,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 7,
+                "time": 14384,
+                "hasUnpaved": false,
+                "origNarrative": "Go east on W Lincoln Ave.",
+                "maneuvers": [
+                    {
+                        "distance": 0.071,
+                        "streets": [
+                            "W Oak St"
+                        ],
+                        "narrative": "Start out going west on W Oak St toward S Clementine St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -117.915642,
+                            "lat": 33.834492
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:17",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.83449172973633,-117.91564178466797|marker-1||33.834232330322266,-117.91682434082031|marker-2||&center=33.8343620300293,-117.91623306274414&defaultMarker=none&zoom=15&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 17,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.07,
+                        "streets": [
+                            "S Clementine St"
+                        ],
+                        "narrative": "Turn right onto S Clementine St.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -117.916824,
+                            "lat": 33.834232
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:28",
+                        "directionName": "Northwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.834232330322266,-117.91682434082031|marker-2||33.83506774902344,-117.91751098632812|marker-3||&center=33.83465003967285,-117.91716766357422&defaultMarker=none&zoom=14&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 28,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 2
+                    },
+                    {
+                        "distance": 2.478,
+                        "streets": [
+                            "W Lincoln Ave"
+                        ],
+                        "narrative": "Turn right onto W Lincoln Ave.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -117.917511,
+                            "lat": 33.835068
+                        },
+                        "index": 2,
+                        "formattedTime": "00:04:31",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.83506774902344,-117.91751098632812|marker-3||33.83771514892578,-117.87580108642578|marker-4||&center=33.83639144897461,-117.89665603637695&defaultMarker=none&zoom=9&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 271,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.727,
+                        "streets": [
+                            "CA-57 N"
+                        ],
+                        "narrative": "Merge onto CA-57 N toward Pomona.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -117.875801,
+                            "lat": 33.837715
+                        },
+                        "index": 3,
+                        "formattedTime": "00:00:58",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "57",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=57&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.83771514892578,-117.87580108642578|marker-4||33.845367431640625,-117.87593841552734|marker-5||&center=33.8415412902832,-117.87586975097656&defaultMarker=none&zoom=10&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 58,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 19.363,
+                        "streets": [
+                            "CA-91 E"
+                        ],
+                        "narrative": "Merge onto CA-91 E via EXIT 5A toward Riverside.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -117.875938,
+                            "lat": 33.845367
+                        },
+                        "index": 4,
+                        "formattedTime": "00:18:27",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "91",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=91&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "5A",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=5A&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.845367431640625,-117.87593841552734|marker-5||33.879730224609375,-117.56523895263672|marker-6||&center=33.862548828125,-117.72058868408203&defaultMarker=none&zoom=6&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 1107,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 241.227,
+                        "streets": [
+                            "I-15 N"
+                        ],
+                        "narrative": "Merge onto I-15 N via EXIT 51 toward Barstow (Crossing into Nevada).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -117.565239,
+                            "lat": 33.87973
+                        },
+                        "index": 5,
+                        "formattedTime": "03:32:30",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "15",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=15&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "51",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=51&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=33.879730224609375,-117.56523895263672|marker-6||36.17076110839844,-115.15767669677734|marker-7||&center=35.025245666503906,-116.36145782470703&defaultMarker=none&zoom=2&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 12750,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.948,
+                        "streets": [
+                            "I-515 S",
+                            "US-95 S",
+                            "US-93 S"
+                        ],
+                        "narrative": "Merge onto I-515 S/US-95 S/US-93 S via EXIT 42B toward Phoenix/Downtown LV.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -115.157677,
+                            "lat": 36.170761
+                        },
+                        "index": 6,
+                        "formattedTime": "00:01:15",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "515",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=515&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "95",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=95&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "93",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=93&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "42B",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=42B&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=36.17076110839844,-115.15767669677734|marker-7||36.174930572509766,-115.14250946044922|marker-8||&center=36.1728458404541,-115.15009307861328&defaultMarker=none&zoom=10&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 75,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 0.245,
+                        "streets": [],
+                        "narrative": "Take the Las Vegas Blvd exit, EXIT 75A, toward Cashman Center/Fremont Street District.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -115.142509,
+                            "lat": 36.174931
+                        },
+                        "index": 7,
+                        "formattedTime": "00:00:24",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "75A",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=75A&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=36.174930572509766,-115.14250946044922|marker-8||36.17354965209961,-115.1385269165039|marker-9||&center=36.17424011230469,-115.14051818847656&defaultMarker=none&zoom=13&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 24,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0.331,
+                        "streets": [
+                            "Las Vegas Blvd",
+                            "Las Vegas Boulevard State Scenic Byway",
+                            "NV-604"
+                        ],
+                        "narrative": "Merge onto Las Vegas Blvd/Las Vegas Boulevard State Scenic Byway/NV-604 toward Downtown LV.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -115.138527,
+                            "lat": 36.17355
+                        },
+                        "index": 8,
+                        "formattedTime": "00:00:53",
+                        "directionName": "Southwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "604",
+                                "type": 527,
+                                "url": "http://icons.mqcdn.com/icons/rs527.png?n=604",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=36.17354965209961,-115.1385269165039|marker-9||36.169246673583984,-115.14070892333984|marker-10||&center=36.1713981628418,-115.13961791992188&defaultMarker=none&zoom=11&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 53,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 6
+                    },
+                    {
+                        "distance": 0.007,
+                        "streets": [
+                            "Fremont St",
+                            "NV-582"
+                        ],
+                        "narrative": "Turn left onto Fremont St/NV-582.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -115.140709,
+                            "lat": 36.169247
+                        },
+                        "index": 9,
+                        "formattedTime": "00:00:01",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "582",
+                                "type": 527,
+                                "url": "http://icons.mqcdn.com/icons/rs527.png?n=582",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=GQxqaxAc8Jvm0xXNAiAmk3IpvpYAV8aF&size=225,160&locations=36.169246673583984,-115.14070892333984|marker-10||36.1692008972168,-115.14059448242188|marker-11||&center=36.16922378540039,-115.14065170288086&defaultMarker=none&zoom=15&rand=1098992413&session=5f272d2f-0080-5f21-02b4-326a-061f4d41502d",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 1,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to LAS VEGAS, NV.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -115.140594,
+                            "lat": 36.169201
+                        },
+                        "index": 10,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -117.915642,
+                    "lat": 33.834492
+                },
+                "adminArea4": "Orange County",
+                "adminArea5": "Anaheim",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 44168391,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -117.915638,
+                    "lat": 33.834492
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -115.140594,
+                    "lat": 36.169201
+                },
+                "adminArea4": "Clark County",
+                "adminArea5": "Las Vegas",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "NV",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 66084753,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -115.140597,
+                    "lat": 36.169202
+                }
+            }
+        ],
+        "time": 14384,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2020 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2020 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
