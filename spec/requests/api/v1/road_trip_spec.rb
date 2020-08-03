@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Road Trip Endpoints" do
-  xit "returns the forecast for given city" do
+  it "returns the forecast for given city" do
     user_params = {
       'email': 'email@gmail.com',
       'password': 'password',
@@ -20,7 +20,8 @@ describe "Road Trip Endpoints" do
     }
 
     post '/api/v1/roadtrip', params: roadtrip_params
-    JSON.parse(response.body, symbolize_names: true)
+    json2 = JSON.parse(response.body, symbolize_names: true)
+
     expect(response).to be_successful
     expect(response.status).to eq(204)
   end
