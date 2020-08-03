@@ -17,12 +17,10 @@ describe MapQuestService do
 
   it ".get_route" do
     WebMock.allow_net_connect!
-    #origin, destination, route time
     service = MapQuestService.new
     route_info = service.get_route("Anaheim, CA", "Las Vegas, NV")
 
     expect(route_info).to be_a(Hash)
-    #total travel time
     expect(route_info[:route][:formattedTime]).to eq("03:59:44")
   end
 end
