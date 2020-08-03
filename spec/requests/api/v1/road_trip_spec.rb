@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Road Trip Endpoints" do
-  it "returns the forecast for given city" do
+  xit "returns the forecast for given city" do
     user_params = {
       'email': 'email@gmail.com',
       'password': 'password',

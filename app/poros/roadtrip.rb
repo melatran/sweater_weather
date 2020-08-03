@@ -1,9 +1,9 @@
 class Roadtrip
-  attr_reader :travel_time, :distance
+  attr_reader :origin, :destination, :travel_time, :temperature, :temp_summary
 
-  def initialize(data)
-    @travel_time = get_travel_time(data)
-    @distance = get_travel_distance(data)
+  def initialize(origin, destination)
+    @origin = origin
+    @destination = destination
   end
 
   def get_travel_distance(data)

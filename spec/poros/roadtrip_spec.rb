@@ -4,7 +4,7 @@ describe Roadtrip do
   before :each do
     json_response = File.read('./spec/fixtures/roadtrip_response.json')
     route = JSON.parse(json_response, symbolize_names: true)
-    @roadtrip = Roadtrip.new(route)
+    @roadtrip = Roadtrip.new("Anaheim, CA", "Las Vegas, NV")
   end
 
   it "exists" do
@@ -12,7 +12,7 @@ describe Roadtrip do
   end
 
   it "can get attributes for a roadtrip" do
-    expect(@roadtrip.travel_time).to eq("03:59:44")
-    expect(@roadtrip.distance).to eq(265.467)
+    expect(@roadtrip.origin).to eq("Anaheim, CA")
+    expect(@roadtrip.destination).to eq("Las Vegas, NV")
   end
 end
