@@ -17,11 +17,11 @@ class Trail
     trail_info = HikingService.new.get_trails(lat, lon)
     trail_data[:trails].map do |trail|
       {
-        :name = trail[:name]
-        :summary = trail[:summary]
-        :difficulty = trail[:difficulty]
-        :location = trail[:location]
-        :distance = get_directions(trail[:location])
+        name: trail[:name],
+        summary: trail[:summary],
+        difficulty: trail[:difficulty],
+        location: trail[:location],
+        distance: get_directions(trail[:location])
       }
     end
     trails
