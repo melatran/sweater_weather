@@ -42,3 +42,8 @@ If the user was unable to login, the response will tell the user what their erro
 
 <img width="846" alt="Screen Shot 2020-08-02 at 11 10 25 AM" src="https://user-images.githubusercontent.com/59414750/89129260-ce60bb80-d4b0-11ea-9020-f3b6e12d38c1.png">
 
+POST `/api/v1/roadtrip`
+
+If the the entered the correct credentials and an origin and destination, they will see this as their response.
+
+<img width="697" alt="Screen Shot 2020-08-03 at 2 23 37 PM" src="https://user-images.githubusercontent.com/59414750/89228730-03ded500-d595-11ea-811e-3689190cb867.png">
