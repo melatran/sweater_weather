@@ -13,11 +13,25 @@ class Trail
     end
   end
 
+  def format_for_trails
+    trail_info = HikingService.new.get_trails(lat, lon)
+    trail_data[:trails].map do |trail|
+      {
+        :name = trail[:name]
+        :summary = trail[:summary]
+        :difficulty = trail[:difficulty]
+        :location = trail[:location]
+        :distance = get_directions(trail[:location])
+      }
+    end
+    trails
+  end
+
   def map_service
     MapQuestService.new
   end
 
-  def get_directions
+  def get_directions(endpoint)
     from = forecast_info[:location].city
     to = @trails[0][:location]
 
