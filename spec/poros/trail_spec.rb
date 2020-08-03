@@ -12,6 +12,10 @@ describe Trail do
   end
 
   it "can return attributes about trails" do
-  
+    expect(@trails.trail_info.length).to eq(10)
+    expect(@trails.trail_info[0][:name]).to eq("Monarch Lake to Crater Lake")
+    expect(@trails.trail_info[0][:summary]).to eq("Gorgeous scenery with waterfalls and wildflowers ending at a breathtaking cirque and glacier lake.")
+    expect(@trails.trail_info[0][:difficulty]).to eq("black")
+    expect(@trails.trail_info[0][:location]).to eq("Granby, Colorado")
   end
 end
