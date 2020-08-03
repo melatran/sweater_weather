@@ -12,4 +12,15 @@ class Trail
       data_info.slice(:name, :summary, :difficulty, :location, :length)
     end
   end
+
+  def format_for_trails(data)
+    {
+      name: data[:trails][:name],
+      summary: data[:trails][:summary],
+      difficulty: data[:trails][:difficulty],
+      location: data[:trails][:location],
+      length: data[:trails][:length],
+      directions: get_directions
+    }
+  end
 end
