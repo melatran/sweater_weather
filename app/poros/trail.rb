@@ -9,7 +9,7 @@ class Trail
 
   def get_trails_info(data)
     data[:trails].map do |data_info|
-      data_info.slice(:name, :summary, :difficulty, :location)
+      data_info.slice(:name, :summary, :difficulty, :location, :length)
     end
   end
 end
