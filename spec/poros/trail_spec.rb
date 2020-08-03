@@ -4,7 +4,7 @@ describe Trail do
   before :each do
     json_response = File.read('./spec/fixtures/hiking_response.json')
     trails_info = JSON.parse(json_response, symbolize_names: true)
-    @trails = Trail.new(trails_info)
+    @trails = Trail.new("denver,co", trails_info)
   end
 
   it "exists" do

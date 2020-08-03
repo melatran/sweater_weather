@@ -1,7 +1,8 @@
 class Trail
-  attr_reader :trail_info
+  attr_reader :trail_info, :location
 
-  def initialize(data)
+  def initialize(location, data)
+    @location = location
     @trail_info = get_trails_info(data)
   end
 
