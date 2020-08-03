@@ -7,6 +7,5 @@ describe "Trails Endpoint" do
     get "/api/v1/trails", params: {location: 'denver,co'}
 
     expect(response).to be_successful
-    expect(response.status).to eq(200)
   end
 end
