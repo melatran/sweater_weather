@@ -1,6 +1,10 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    render json: ForecastSerializer.new(get_current_forecast)
+    if params[:location].empty?
+      render json: {status: 412, error: 'Location cannot be blank'}, status: 412
+    else
+      render json: ForecastSerializer.new(get_current_forecast)
+    end
   end
 
   private

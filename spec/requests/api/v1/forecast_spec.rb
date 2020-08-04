@@ -23,8 +23,14 @@ describe "Forecast Endpoint" do
     expect(forecast[:data][:attributes][:daily_forecast].length).to eq(8)
   end
 
-  it "returns an error message if location unknown" do
+  it "returns an error message if location is empty" do
     WebMock.allow_net_connect!
-    get "/api/v1/forecast", params: {location: 'hogwarts'}
+    get "/api/v1/forecast", params: {location: ''}
+
+    error = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(412)
+    expect(error[:error]).to eq("Location cannot be blank")
   end
 end
