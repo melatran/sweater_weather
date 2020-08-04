@@ -8,7 +8,7 @@ describe "Forecast Endpoint" do
 
     expect(response).to be_successful
     expect(response.status).to eq(200)
-    
+
     forecast = JSON.parse(response.body, symbolize_names: true)
     expected_keys = [:id,
               :location,
@@ -21,5 +21,10 @@ describe "Forecast Endpoint" do
     expect(forecast).to be_a(Hash)
     expect(forecast[:data][:attributes][:hourly_forecast].length).to eq(48)
     expect(forecast[:data][:attributes][:daily_forecast].length).to eq(8)
+  end
+
+  it "returns an error message if location unknown" do
+    WebMock.allow_net_connect!
+    get "/api/v1/forecast", params: {location: 'hogwarts'}
   end
 end
