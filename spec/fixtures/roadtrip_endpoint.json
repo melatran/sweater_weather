@@ -1,0 +1,13 @@
+{
+    "status": 200,
+    "roadtrip": {
+        "origin": "alhambra, ca",
+        "destination": "brooklyn, ny",
+        "travel_time": "40:29:13",
+        "travel_distance": 2789.8127,
+        "forecast": {
+            "temperature": 76.89,
+            "description": "moderate rain"
+        }
+    }
+}
