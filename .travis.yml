@@ -20,4 +20,3 @@ deploy:
   on:
     repo: melatran/sweater_weather
   run: rails db:migrate
-  skip_cleanup: true
