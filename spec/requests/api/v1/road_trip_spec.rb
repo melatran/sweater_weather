@@ -21,7 +21,6 @@ describe "Road Trip Endpoints" do
 
     post '/api/v1/roadtrip', params: roadtrip_params
     json2 = JSON.parse(response.body, symbolize_names: true)
-
     expect(response).to be_successful
     expect(response.status).to eq(200)
     expect(json2[:roadtrip].keys).to eq([

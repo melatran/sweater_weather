@@ -26,7 +26,6 @@ class Forecast
     end
   end
 
-
   def get_daily_forecast(data)
     data[:daily].map do |data_info|
       data_info.slice(:dt, :weather, :rain, :temp)
