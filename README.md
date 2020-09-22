@@ -2,7 +2,7 @@
 
 This is a solo project for Backend Mod3 at Turing 2003. You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination. Your team is working in a service-oriented architecture. The front-end will communicate with your back-end through an API. Your job is to expose that API that satisfies the front-end team’s requirements.
 
-(View in Production) [http://sweater-weather-2003.herokuapp.com/api/v1/forecast?location=anaheim,ca]
+(View in Production)[http://sweater-weather-2003.herokuapp.com/api/v1/forecast?location=anaheim,ca]
 
 Adjust the path with the different endpoints below
 
