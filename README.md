@@ -2,9 +2,7 @@
 
 This is a solo project for Backend Mod3 at Turing 2003. You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination. Your team is working in a service-oriented architecture. The front-end will communicate with your back-end through an API. Your job is to expose that API that satisfies the front-end team’s requirements.
 
-[View in Production](http://sweater-weather-2003.herokuapp.com/api/v1/forecast?location=anaheim,ca)
-
-Adjust the path with the different endpoints below
+[View in Production](http://sweater-weather-2003.herokuapp.com/api/v1/forecast?location=anaheim,ca)*(Adjust the path with the different endpoints below)*
 
 ## Project Description
 This is an API based application built in Ruby on Rails. The app allows users to enter their destination to retrieve the daily, hourly, and weekly forecast through implementing MapQuest's Geocoding API and OpenWeather's API. The background of the landing page is a random image pulled from Unsplash's API that matches the location entered in the app. Endpoint needs to use the city and state from the GET request and send it to MapQuest’s Geocoding API to retrieve the latitude and longitude for the city. Use of the MapQuest’s Geocoding API is a hard requirement. Retrieve forecast data from the OpenWeather One Call API using the latitude and longitude from MapQuest.
